@@ -11,6 +11,7 @@ import { Task } from '../../mock-tasks';
 export class TaskItemComponent implements OnInit {
   @Input() task!: Task;
   @Output() onDelete: EventEmitter<Task> = new EventEmitter();
+  @Output() onToggle: EventEmitter<Task> = new EventEmitter();
 
   faTimes = faTimes;
 
